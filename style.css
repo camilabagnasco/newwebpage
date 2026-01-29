@@ -94,6 +94,21 @@ nav a {
   box-shadow: 0 30px 80px rgba(0,0,0,0.25);
 }
 
+/* MÉTODO */
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  text-align: center;
+}
+
+.method-steps span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--blue);
+  opacity: 0.2;
+}
+ 
 /* METRICS */
 .metrics {
   margin-top: -60px;
