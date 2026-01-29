@@ -2,17 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboards para Clínicas | Analista de Datos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboards para Clínicas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="navbar">
-  <div class="container nav-content">
+<header class="nav">
+  <div class="container nav-inner">
     <h1 class="logo">HealthDash</h1>
     <nav>
-      <a href="#home">Home</a>
       <a href="#services">Servicios</a>
       <a href="#features">Características</a>
       <a href="#faq">FAQ</a>
@@ -22,21 +21,30 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
+<section class="hero">
   <div class="container hero-grid">
     <div class="hero-text">
-      <span class="badge">Dashboards para clínicas de salud</span>
-      <h2>Visualizá, entendé y mejorá<br> el rendimiento de tu clínica</h2>
+      <span class="pill">Dashboards para clínicas de salud</span>
+      <h2>Visualizá y gestioná<br> los datos de tu clínica</h2>
       <p>
-        Transformo tus datos en dashboards claros y accionables para tomar
-        mejores decisiones clínicas, operativas y financieras.
+        Dashboards claros y accionables para mejorar decisiones médicas,
+        operativas y financieras.
       </p>
-      <a href="#contact" class="btn-primary">Solicitar diagnóstico gratuito</a>
+      <a href="#contact" class="btn-white">Solicitar demo</a>
     </div>
 
-    <div class="hero-image">
-      <img src="assets/dashboard.png" alt="Dashboard clínico" />
+    <div class="hero-mockup">
+      <img src="assets/dashboard.png" alt="Dashboard clínico"/>
     </div>
+  </div>
+</section>
+
+<!-- MÉTRICAS -->
+<section class="metrics">
+  <div class="container metrics-grid">
+    <div class="metric">+10<br><span>Años analizando datos</span></div>
+    <div class="metric highlight">+200<br><span>Dashboards creados</span></div>
+    <div class="metric pink">95%<br><span>Satisfacción clientes</span></div>
   </div>
 </section>
 
@@ -48,51 +56,33 @@
     <div class="cards">
       <div class="card">
         <h4>Dashboards Clínicos</h4>
-        <p>Indicadores de atención, ocupación, turnos, tiempos y resultados.</p>
+        <p>Turnos, tiempos de espera, ocupación, atención médica.</p>
       </div>
-
       <div class="card">
         <h4>Dashboards Financieros</h4>
-        <p>Ingresos, costos, facturación, obras sociales y rentabilidad.</p>
+        <p>Facturación, costos, rentabilidad y obras sociales.</p>
       </div>
-
       <div class="card">
-        <h4>Automatización de Reportes</h4>
-        <p>Reportes actualizados automáticamente sin Excel manual.</p>
+        <h4>Automatización</h4>
+        <p>Reportes automáticos sin Excel manual.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="section alt">
-  <div class="container">
-    <h3 class="section-title">Características</h3>
-
-    <div class="features-grid">
-      <div class="feature">
-        <span>📊</span>
-        <h4>Visual y simple</h4>
-        <p>Dashboards claros para equipos médicos y administrativos.</p>
-      </div>
-
-      <div class="feature">
-        <span>⚡</span>
-        <h4>Datos en tiempo real</h4>
-        <p>Información actualizada para decisiones rápidas.</p>
-      </div>
-
-      <div class="feature">
-        <span>🔒</span>
-        <h4>Confidencialidad</h4>
-        <p>Trabajo bajo estándares de seguridad y privacidad.</p>
-      </div>
-
-      <div class="feature">
-        <span>🧠</span>
-        <h4>Enfoque en salud</h4>
-        <p>Entiendo los procesos clínicos y administrativos.</p>
-      </div>
+<section id="features" class="section light">
+  <div class="container feature-panel">
+    <div class="feature-text">
+      <span class="pill dark">Tiempo real</span>
+      <h3>Seguimiento en tiempo real</h3>
+      <p>
+        Información siempre actualizada para decisiones rápidas
+        y basadas en datos.
+      </p>
+    </div>
+    <div class="feature-image">
+      <img src="assets/dashboard.png"/>
     </div>
   </div>
 </section>
@@ -100,38 +90,34 @@
 <!-- FAQ -->
 <section id="faq" class="section">
   <div class="container">
-    <h3 class="section-title">Preguntas Frecuentes</h3>
+    <h3 class="section-title">Preguntas frecuentes</h3>
 
-    <div class="faq-item">
-      <h4>¿Necesito tener los datos ordenados?</h4>
-      <p>No. Me encargo de limpiar y estructurar la información.</p>
-    </div>
+    <div class="faq">
+      <h4>¿Necesito sistemas complejos?</h4>
+      <p>No. Trabajo con Excel, sistemas médicos o bases existentes.</p>
 
-    <div class="faq-item">
-      <h4>¿Qué herramientas usás?</h4>
-      <p>Power BI, Looker Studio, SQL y Python según el caso.</p>
-    </div>
+      <h4>¿Cuánto demora?</h4>
+      <p>Entre 2 y 4 semanas según complejidad.</p>
 
-    <div class="faq-item">
-      <h4>¿Cuánto tarda el desarrollo?</h4>
-      <p>Entre 2 y 4 semanas dependiendo de la complejidad.</p>
+      <h4>¿Mis datos están seguros?</h4>
+      <p>Sí, trabajo bajo acuerdos de confidencialidad.</p>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contact" class="section cta">
+<!-- CTA -->
+<section id="contact" class="cta">
   <div class="container cta-box">
-    <h3>¿Querés entender mejor tus datos?</h3>
-    <p>Agendá una llamada y evaluamos tu clínica sin costo.</p>
-    <a href="mailto:contacto@healthdash.com" class="btn-primary">
+    <h3>Convertí tus datos en decisiones</h3>
+    <p>Agendá una llamada gratuita y analizamos tu clínica.</p>
+    <a href="mailto:contacto@healthdash.com" class="btn-white">
       Contactar
     </a>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 HealthDash · Dashboards para clínicas</p>
+  © 2026 HealthDash
 </footer>
 
 <script src="script.js"></script>
