@@ -68,7 +68,7 @@ nav a:hover {
   border-radius: 999px;
 }
 
-/* HERO */
+/* ==== HERO ==== */
 .hero {
   background: linear-gradient(180deg, var(--blue), var(--blue-dark));
   padding: 9rem 0 7rem;
@@ -139,7 +139,7 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
-/* MÉTODO */
+/* ==== MÉTODO ==== */
 .method-steps {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -158,7 +158,7 @@ nav a:hover {
   opacity: 0.15;
 }
 
-/* METRICS */
+/* ==== METRICS ==== */
 .metrics {
   margin-top: -80px;
 }
@@ -227,7 +227,133 @@ nav a:hover {
   color: var(--text-dark);
 }
 
-/* CTA */
+/* ==== FAQs ==== */
+section.faq {
+  background:
+    radial-gradient(
+      900px 500px at 10% -10%,
+      rgba(137,173,255,0.25),
+      transparent 60%
+    ),
+    var(--primary);
+}
+
+.faq {
+  padding: 6rem 1.5rem;
+}
+
+/* Header */
+
+.faq-header {
+  max-width: 640px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.faq-header h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.faq-intro {
+  color: #dbeafe;
+  font-size: 1.05rem;
+}
+
+/* FAQ List */
+
+.faq-list {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* FAQ Item */
+
+.faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.faq-item[open] {
+  border-color: var(--tertiary);
+}
+
+/* Summary */
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: var(--secondary-2);
+  transition: transform 0.25s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+/* Focus (keyboard accessibility) */
+
+.faq-item summary:focus-visible {
+  outline: 3px solid var(--tertiary-2);
+  outline-offset: 4px;
+}
+
+/* Content */
+
+.faq-content {
+  padding: 0 1.5rem 1.5rem;
+  color: #dbeafe;
+}
+
+.faq-content p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Layout */
+
+.faq .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .faq-item,
+  .faq-item summary::after {
+    transition: none;
+  }
+}
+
+/* ==== CTA ==== */
 .cta {
   background: linear-gradient(180deg, var(--blue-dark), #162d7d);
   color: white;
@@ -237,7 +363,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* FOOTER */
+/* ==== FOOTER ==== */
 .footer {
   text-align: center;
   padding: 2.5rem;
